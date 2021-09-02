@@ -3,16 +3,11 @@
 
     &.flex-inline {
         display: inline-flex;
-
-        &>* {
-            align-items: stretch;
-        }
     }
 
     &.flex-col {
         flex-direction: column;
     }
-
 
     &.flex-y {
         align-items: center;
@@ -29,6 +24,10 @@
 
 
 
+    &.flex-inline>* {
+        align-items: stretch;
+    }
+
     &.flex-stretch>* {
         flex-grow: 10;
     }
@@ -38,12 +37,4 @@
         justify-content: flex-end;
     }
 
-}
-
-.flex-no-grow {
-    flex-grow: 0;
-}
-
-.flex-no-shrink {
-    flex-shrink: 0;
 }

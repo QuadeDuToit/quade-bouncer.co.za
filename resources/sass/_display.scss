@@ -3,12 +3,6 @@
 @import "display/sizing";
 @import "display/radius";
 @import "display/lists";
-
-.z-index-5 {
-    z-index: 5;
-}
-
-
 .float-left {
     float: left;
 }
@@ -20,19 +14,11 @@
 .block {
     display: block;
     width: 100%;
-    // height: 100%;
-}
-
-.uppsercase {
-    text-transform: uppercase;
-}
-
-.crs-pointer {
-    cursor: pointer;
+    height: 100%;
 }
 
 .invisible {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 .hide {
@@ -41,121 +27,4 @@
 
 .no-warp {
     white-space: pre;
-}
-
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.fixed {
-    position: fixed;
-}
-
-
-// create new file for scrolling
-.scroll-y {
-    overflow-y: auto;
-}
-
-.scroll-x {
-    overflow-y: auto;
-}
-
-.scroll {
-    @extend .scroll-y;
-    @extend .scroll-x;
-}
-
-
-* {
-    scrollbar-color: #6e6e6e #dcdcdc;
-}
-
-
-/* -- // modal -- */
-
-
-/* -- scrollbar -- */
-
-.scrollbar_success::-webkit-scrollbar {
-    width: 8px;
-}
-
-.scrollbar_success::-webkit-scrollbar-track {
-    border-radius: 15px;
-    background: #dcdcdc;
-}
-
-.scrollbar_success::-webkit-scrollbar-thumb {
-    background: #6e6e6e;
-    border-radius: 15px;
-}
-
-.scrollbar_success::-webkit-scrollbar-thumb:hover {
-    background: $clr-success;
-}
-
-.scrollbar,
-.scrollbar_success {
-    scrollbar-color: #6e6e6e #dcdcdc;
-    scrollbar-width: thin;
-}
-
-
-.pg {
-    padding: 30px 50px 10px 50px;
-    height: calc(100vh - 90px);
-    min-height: calc(100vh - 90px);
-
-    &.pg-height-limit {
-        max-height: calc(100vh - 90px);
-    }
-}
-
-
-ul.breadcrumbs {
-    & li+li::before {
-        margin: 0 5px 0 3px;
-    }
-
-    &.breadcrumbs-slash li+li::before {
-        content: "/";
-    }
-}
-
-
-
-//  borders
-
-.border-bottom {
-    border-bottom: 1px solid $clr-border;
-
-}
-
-.select-none {
-    pointer-events: none;
-}
-
-
-// iframe 
-
-.iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.online-status {
-    background-color: $clr-light;
-    display: block;
-    height: 15px;
-    width: 15px;
 }

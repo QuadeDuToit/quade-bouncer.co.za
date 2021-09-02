@@ -1,54 +1,39 @@
-$clr-success: #2ec18b;
-$clr-success-hvr: #1a8960;
-$clr-warning: #ff6600;
-$clr-warning-hvr: #ff6600;
-$clr-danger: #ce7575;
-$clr-danger-hvr: #ad6565;
-$clr-grey-dim: #707070;
-$clr-grey-lt: #dddddd;
-$clr-default: #e1e1e1;
-$clr-tbl-edit: #aae7d1;
-$clr-default-dark: #9F9F9F;
-$clrPgGrey: #E4E5E6;
-$borderRadius: 30px;
-$clrHolderBg: #ffffff;
-$clrStatusOnline: $clr-success;
-$clrStatusOffline: #DCDCDC;
-$clrGray95: #F2F2F2;
-$clrGray43: #6E6E6E;
-
-// ---------------
-// ---------------
-// ---------------
-// ---------------
-
+// COLOR PRIMARY
 $clr-primary: #452154;
 $clr-primary-dark: #2E1639;
-
-$clr-success: #2ec18b;
-$clr-success-dark: #1a8960;
-
-$clr-info: #2991AC;
-$clr-info-dark: #2991AC;
-
-$clr-warning: #ff6600;
-$clr-warning-dark: #ff6600;
-
-$clr-warning-alt: #DCD065;
-$clr-warning-dark-alt: #AEA235;
-
-$clr-danger: #ad6565; // #ce7575;
-$clr-danger-dark: #D50108;
-
-$clr-dark: #6E6E6E;
-$clr-secondary: #A4A0A0;
-$clr-default: #FFFFFF;
-$clr-light: #DDDDDD;
-$clr-extra-light: #E4E5E6;
+$clr-primary-light: #2E1639;
+$clr-primary-dark-x: #19507F;
+$clr-primary-dark-xx: #0D2840;
+;
+// COLOR SUCCESS
+$clr-success: #a1b1a1;
+$clr-success-dark: #39DB39;
+$clr-success-light: #6DE26D;
+// COLOR INFO
+$clr-info: #8F65FF;
+$clr-info-dark: #9E7AFF;
+$clr-info-light: #BAA1FF;
+// COLOR WARNING
+$clr-warning: #FFC600;
+$clr-warning-dark: #FFD33A;
+$clr-warning-light: #FFDA58;
+// COLOR DARNGER
+$clr-danger: #FF4252;
+$clr-danger-dark: #FF4858;
+$clr-danger-light: #FF6875;
+$clr-danger-hvr: #FF4858;
+// COLOR DARK
+$clr-dark: #C1C8CE;
+$clr-extra-dark: #22262A;
+// COLOR DEFAULT
+$clr-default:#E5E8EA;
+// COLOR LIGHT
+$clr-light: #F1F3F4;
+$clr-extra-light: #F6F7F8;
 // ----
-$font-clr: $clr-dark;
-// -- user status
-$clr-status-online: $clr-success;
-$clr-status-offline: #DCDCDC;
-// border colours
-$clr-border: #c9c9c9;
+$font-clr: $clr-extra-dark;
+$font-clr-hightlight: #33A0FF;
+// DEFAULT COLOURS 
+$clr-white: #FFFFFF;
+$clr-tbl-edit: #0D2840;
+$clr-tbl-edit: #0D2840;

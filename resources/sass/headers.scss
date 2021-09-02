@@ -1,0 +1,91 @@
+//CLASSIC CLASS FONT SIZES
+$header1ClassicFontSize: 25px;
+$header2ClassicFontSize: 25px;
+$header3ClassicFontSize: 21px;
+$header4ClassicFontSize: 18px;
+$header5ClassicFontSize: 15px;
+$header6ClassicFontSize: 25px;
+$header1ClassicFontSize: 16px;
+%clearSpacing {
+    padding: 0;
+    margin: 0;
+}
+
+%classic {
+    @extend %clearSpacing;
+    color: $font-clr;
+    font-family: 'proxima-nova';
+    font-weight: 500;
+    border-bottom: none;
+    .icon {
+        margin-right: 10px;
+        position: relative;
+    }
+}
+
+h1 {
+    // font-size: 25px;
+    font-family: 'proxima-nova';
+    font-weight: 600;
+    .icon {
+        // font-size: 28px;
+        // top: 3px;   
+    }
+}
+
+h2 {
+    @extend %classic;
+    font-size: $header2ClassicFontSize;
+    font-family: 'proxima-nova';
+    font-weight: 600;
+    .icon {
+        font-size: 28px;
+        top: 3px;
+    }
+}
+
+h3 {
+    @extend %classic;
+    font-size: $header3ClassicFontSize;
+    .icon {
+        // font-size: 28px;
+        // top: 3px;   
+    }
+}
+
+h4 {
+    @extend %classic;
+    font-family: 'proxima-nova';
+    font-weight: 600;
+    font-size: $header4ClassicFontSize;
+    .icon {
+        // font-size: 28px;
+        // top: 3px;   
+    }
+}
+
+h5 {
+    @extend %classic;
+    font-size: $header5ClassicFontSize;
+    .icon {
+        // font-size: 28px;
+        // top: 3px;   
+    }
+}
+
+h6 {
+    @extend %classic;
+    // font-size: 25px;
+    .icon {
+        // font-size: 28px;
+        // top: 3px;   
+    }
+}
+
+p {
+    @extend %clearSpacing;
+    font-size: 16px;
+    color: #6E6E6E;
+    font-family: 'proxima-nova';
+    font-weight: 500;
+}

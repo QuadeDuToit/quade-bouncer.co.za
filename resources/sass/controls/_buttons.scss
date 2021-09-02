@@ -1,395 +1,58 @@
- $btn-border-size: 2px;
-
- .btn-circle {
-     background-color: $clr-success;
-     height: 40px;
-     width: 40px;
-
-     border-radius: 100px;
-     box-shadow: 0 0 0 2px white, 0 0 0 4px $clr-success;
-     color: white;
-     margin: 4px 4px;
-     cursor: pointer;
-     transition: background-color 200ms, box-shadow 200ms;
-     @extend .flex;
-     @extend .flex-center;
-
-     &:hover {
-         background-color: $clr-success-hvr;
-         box-shadow: 0 0 0 2px white, 0 0 0 4px $clr-success-hvr;
-     }
-
-     .icon {
-         font-size: 30px;
-     }
- }
-
- .btn {
-     -webkit-box-shadow: unset;
-     -webkit-text-fill-color: unset;
-     filter: unset;
-     padding: 15px 25px;
-     border: none;
-     @extend .font-size-md;
-     cursor: pointer;
-     transition: background-color 200ms, color 200ms, border 200ms;
-     text-transform: capitalize;
-     @extend .control-size;
-     display: inline-flex;
-     @extend .flex-y;
-     vertical-align: middle;
-     box-sizing: border-box;
-     color: white;
-     font-weight: 400;
-
-     &,
-     & .icon,
-     & .text {
-         transition: background-color 200ms, color 200ms, border 200ms;
-     }
-
-
-     &:hover,
-     &:focus {
-         -webkit-box-shadow: unset;
-         -webkit-text-fill-color: unset;
-         filter: unset;
-     }
-
-     &.btn-radius {
-         @extend .radius-25;
-     }
-
-     &.btn-block {
-         display: block;
-         width: 100%;
-         text-align: center;
-         @extend .flex;
-         @extend .flex-center;
-     }
-
-     .icon {
-         font-size: 19px;
-         margin-right: 10px;
-         margin-top: -2px;
-         transition: color 200ms;
-
-         &::before,
-         &::after {
-             color: white;
-             transition: color 200ms;
-
-         }
-     }
-
-     &.btn-sm {
-         @extend .control-size-sm;
-         padding: 5px 25px;
-
-         &>.icon {
-             margin-top: 0;
-             font-size: 15px;
-         }
-
-     }
-
-     &.btn-primary {
-         background-color: $clr-primary;
-         color: white;
-         border: solid $btn-border-size $clr-primary;
-
-         &:hover {
-             background-color: $clr-primary-dark;
-             border-color: $clr-primary-dark;
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-primary;
-
-             &:hover {
-                 color: $clr-primary-dark;
-             }
-         }
-     }
-
-     &.btn-success {
-         background-color: $clr-success;
-         color: white;
-         border: solid $btn-border-size $clr-success;
-
-         &:hover {
-             background-color: $clr-success-dark;
-             border-color: $clr-success-dark;
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-success;
-
-             &:hover {
-                 color: $clr-success-dark;
-
-                 .icon,
-                 .text {
-
-                     &,
-                     &::before,
-                     &::after {
-                         color: $clr-success-dark;
-                     }
-                 }
-             }
-
-             .icon,
-             .text {
-
-                 &,
-                 &::before,
-                 &::after {
-                     color: $clr-success;
-
-                 }
-             }
-         }
-     }
-
-     &.btn-warning {
-         background-color: $clr-warning;
-         color: white;
-         border: solid $btn-border-size $clr-warning;
-
-
-         &:hover {
-             background-color: $clr-warning-dark;
-             border-color: $clr-warning-dark;
-
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-warning;
-
-             &:hover {
-                 color: $clr-warning-dark;
-
-                 .icon,
-                 .text {
-
-                     &::before,
-                     &::after {
-                         color: $clr-warning-dark;
-                     }
-                 }
-             }
-
-             .icon,
-             .text {
-
-                 &::before,
-                 &::after {
-                     color: $clr-warning;
-
-                 }
-             }
-
-         }
-     }
-
-     &.btn-danger {
-         background-color: $clr-danger;
-         color: white;
-         border: solid $btn-border-size $clr-danger;
-
-
-         &:hover {
-             background-color: $clr-danger-dark;
-             border-color: $clr-danger-dark;
-
-         }
-
-         &.btn-outline {
-
-             &,
-             .text {
-                 background-color: unset;
-                 color: $clr-danger;
-             }
-
-             &:hover {
-                 color: $clr-danger-dark;
-
-                 .icon,
-                 .text {
-
-                     &,
-                     &::before,
-                     &::after {
-                         color: $clr-danger-dark;
-                     }
-                 }
-             }
-
-             .icon,
-             .text {
-
-                 &::before,
-                 &::after {
-                     color: $clr-danger;
-
-                 }
-             }
-         }
-     }
-
-     &.btn-info {
-         background-color: $clr-info;
-         color: white;
-         border: solid $btn-border-size $clr-info;
-
-
-         &:hover {
-             background-color: $clr-info-dark;
-             border-color: $clr-info-dark;
-
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-info;
-
-             &:hover {
-                 color: $clr-info-dark;
-             }
-         }
-     }
-
-     &.btn-default {
-         background-color: $clr-secondary;
-         color: white;
-         border: solid $btn-border-size $clr-secondary;
-
-
-         &:hover {
-             background-color: $clr-dark;
-             border-color: $clr-dark;
-
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-secondary;
-
-             &:hover {
-                 color: $clr-dark;
-
-                 .icon {
-
-                     &::before,
-                     &::after {
-                         color: $clr-dark;
-
-
-                     }
-                 }
-             }
-
-             .icon {
-                 font-size: 19px;
-                 margin-right: 10px;
-                 margin-top: -2px;
-                 transition: color 200ms;
-
-                 &::before,
-                 &::after {
-                     color: $clr-secondary;
-                     transition: color 200ms;
-
-                 }
-             }
-         }
-
-     }
-
-
-
-
-     &.btn-light {
-         background-color: $clr-light;
-         color: white;
-         border: solid $btn-border-size $clr-light;
-
-
-         &:hover {
-             background-color: $clr-success;
-             border-color: $clr-success;
-
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: $clr-light;
-
-             &:hover {
-                 color: $clr-success;
-
-                 .icon {
-
-                     &::before,
-                     &::after {
-                         color: $clr-success;
-
-
-                     }
-                 }
-             }
-
-             .icon {
-                 font-size: 19px;
-                 margin-right: 10px;
-                 margin-top: -2px;
-                 transition: color 200ms;
-
-                 &::before,
-                 &::after {
-                     color: $clr-secondary;
-                     transition: color 200ms;
-
-                 }
-             }
-         }
-
-     }
-
-
-
-
-
-
-     &.btn-white {
-         background-color: white;
-         color: white;
-         border: solid $btn-border-size white;
-
-
-
-         &:hover {
-             background-color: $clr-dark;
-             border-color: white;
-
-         }
-
-         &.btn-outline {
-             background-color: unset;
-             color: white;
-             ;
-
-             &:hover {
-                 color: white;
-                 ;
-             }
-         }
-     }
-
-
- }
+//
+.btn {
+    @extend .flex;
+    @extend .flex-inline;
+    @extend .flex-y;
+    border-radius: 4px;
+    color: $clr-white;
+    height: $control-size;
+    padding: 0 20px;
+    transition: background-color 300ms;
+    font-weight: 600;
+    &.btn-block {
+        width: 100%;
+        text-align: center;
+        display: block !important;
+        line-height: 46px;
+    }
+    .icon+.text {
+        margin-left: 10px;
+    }
+    .icon::before {
+        font-size: 16px;
+    }
+    &.btn-hightlight {
+        background-color: $font-clr-hightlight;
+        .text {
+            color: $clr-white;
+        }
+        &:hover {
+            background-color: #2E90E5;
+            .text {
+                color: $clr-white;
+            }
+        }
+    }
+    &.btn-hightlight-light {
+        background-color: #E9F4FF;
+        .text {
+            color: $font-clr-hightlight;
+        }
+        .icon,
+        .icon::before,
+        .icon::after {
+            color: $font-clr-hightlight;
+        }
+        &:hover {
+            background-color: #2E90E5;
+            .text {
+                color: $clr-white;
+            }
+            .icon,
+            .icon::before,
+            .icon::after {
+                color: $clr-white;
+            }
+        }
+    }
+}

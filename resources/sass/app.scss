@@ -1,68 +1,76 @@
-@import "variables";
 @import "bootstrap_grid";
-
-html,
-body {
-    height: 100%;
-}
-
+@import "variables";
+@import "fonts";
+@import "fonts_and_sizing";
 *,
 ::before,
 ::after {
-    font-family: 'Roboto';
-    font-style: normal;
-    text-decoration: inherit;
-    font-weight: 400;
+    font-family: 'proxima-nova';
+    font-weight: 500;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: $font-clr;
+    font-size: $font-size-md;
+    text-decoration: none;
 }
 
-* {
-    color: $clr-dark;
-    font-size: 15px;
+a:visited {
+    color: inherit;
 }
 
-input,
-textarea,
-select,
-input:hover,
-textarea:hover,
-select:hover,
-input:focus,
-textarea:focus,
-select:focus,
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-    -webkit-text-fill-color: $font-clr;
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-    filter: none;
-}
-
-@import "tables";
-@import "fonts";
-@import "fonts_and_sizing";
+@import "common";
+@import "headers";
 @import "flex";
 @import "icons";
-
 @import "display";
 @import "colors";
 @import "controls";
-
 @import "labels";
 @import "modals/modals";
 @import "animations";
-
-
-
-// // pages
-// @import "dashboard";
-@import "pages/login";
-@import "pages/reset";
+// pages
+#toast-holder {
+    user-select: none;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 25px 0;
+    #toast-items {
+        list-style: none;
+        margin-top: auto;
+        position: relative;
+        >li {
+            margin-top: 10px;
+        }
+    }
+    .toast {
+        border-radius: 4px;
+        bottom: 0;
+        margin-top: auto;
+        min-height: 10px;
+        padding: 5px 5px;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        z-index: 100;
+        transition: opacity 200ms;
+        .text {
+            display: block;
+            width: 94%;
+        }
+        .icon {
+            position: absolute;
+            right: 6px;
+            top: 8px;
+        }
+        &.success {
+            background-color: $clr-success;
+        }
+    }
+}

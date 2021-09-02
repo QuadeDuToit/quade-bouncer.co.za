@@ -1,0 +1,18 @@
+.fadeIn {
+    opacity: 0;
+    animation: 300ms fadeIn forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@import "animations/vue_transitions";

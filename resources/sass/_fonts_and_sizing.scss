@@ -1,10 +1,9 @@
 // $font-clr
 $font-size-xs: 10px;
 $font-size-sm: 12px;
-$font-size-md: 15px;
+$font-size-md: 14px;
 $font-size-lg: 18px;
-$font-size-xl: 20px;
-
+$font-size-xl: 24px;
 .font-size-xs,
 .font-size-sm,
 .font-size-md,
@@ -20,72 +19,43 @@ h6 {
 }
 
 .font-size-xs {
-
     // imported by labels
-    &,
-    &::before,
-    &::after {
-        font-size: $font-size-xs;
-    }
+    font-size: $font-size-xs;
 }
 
 .font-size-sm {
-
-    &,
-    &::before,
-    &::after {
-        font-size: $font-size-sm;
-    }
+    font-size: $font-size-sm;
 }
 
 .font-size-md {
-
-    &,
-    &::before,
-    &::after {
-        font-size: $font-size-md;
-    }
+    font-size: $font-size-md;
 }
 
 .font-size-lg {
-
-    &,
-    &::before,
-    &::after {
-        font-size: $font-size-lg;
-    }
+    font-size: $font-size-lg;
 }
 
 .font-size-xl {
-
-    &,
-    &::before,
-    &::after {
-        font-size: $font-size-xl;
-    }
+    font-size: $font-size-xl;
 }
 
 h1 {
     font-size: 25px;
-    font-family: 'Roboto';
     font-weight: 700;
 }
 
 h2 {
     font-size: 18px;
-    font-family: 'Roboto';
     font-weight: 700;
 }
 
 h3 {
     font-size: 15px;
-    font-family: 'Roboto';
     font-weight: 700;
 }
 
 h4 {
     font-size: 15px;
-    font-family: 'Roboto';
     font-weight: 400;
 }
 
@@ -97,27 +67,22 @@ h6 {
     // font-size: 
 }
 
-
 .text-right {
-    text-align: right !important;
+    text-align: right;
 }
 
 .text-left {
-    text-align: left !important;
+    text-align: left;
 }
 
 .text-center {
-    text-align: center !important;
+    text-align: center;
+}
+
+.semibold {
+    font-weight: 600;
 }
 
 .bold {
     font-weight: 700;
-}
-
-.black {
-    font-weight: 900;
-}
-
-.text-underline {
-    text-decoration: underline;
 }
