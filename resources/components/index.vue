@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- navigation - pages?? how to be handled on basic website -->
-
+    <bar-top />
     <div id="router-holder">
       <router-view></router-view>
     </div>
@@ -10,7 +10,9 @@
 
 <script>
   export default {
-    BarTop: () => import("./navigation/topBanner.vue"),
+    components: {
+      BarTop: () => import("./navigation/topBanner.vue"),
+    },
   };
 </script>
 
