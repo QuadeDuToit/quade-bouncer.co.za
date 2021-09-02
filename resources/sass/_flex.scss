@@ -1,0 +1,49 @@
+.flex {
+    display: flex;
+
+    &.flex-inline {
+        display: inline-flex;
+
+        &>* {
+            align-items: stretch;
+        }
+    }
+
+    &.flex-col {
+        flex-direction: column;
+    }
+
+
+    &.flex-y {
+        align-items: center;
+    }
+
+    &.flex-x {
+        justify-content: center;
+    }
+
+    &.flex-center {
+        @extend .flex-x;
+        @extend .flex-y;
+    }
+
+
+
+    &.flex-stretch>* {
+        flex-grow: 10;
+    }
+
+    &.flex-reverse {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+}
+
+.flex-no-grow {
+    flex-grow: 0;
+}
+
+.flex-no-shrink {
+    flex-shrink: 0;
+}

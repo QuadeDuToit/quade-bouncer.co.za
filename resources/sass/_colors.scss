@@ -1,0 +1,289 @@
+.bg-primary {
+    background: $clr-primary;
+}
+
+.bg-primary-dark {
+    background: $clr-primary-dark;
+}
+
+.bg-success {
+    background: $clr-success;
+}
+
+.bg-success-dark {
+    background: $clr-success-dark;
+}
+
+.bg-danger {
+    background: $clr-danger;
+}
+
+.bg-danger-dark {
+    background: $clr-danger-dark;
+}
+
+.bg-info {
+    background: $clr-info;
+}
+
+.bg-info-dark {
+    background: $clr-info-dark;
+}
+
+.bg-warning {
+    background: $clr-warning;
+}
+
+.bg-warning-dark {
+    background: $clr-warning-dark;
+}
+
+.bg-warning-alt {
+    background: $clr-warning-alt;
+}
+
+
+.bg-warning-dark-alt {
+    background: $clr-warning-dark-alt;
+}
+
+
+.bg-secondary {
+    background: $clr-secondary;
+}
+
+
+.bg-default {
+    background: $clr-default;
+}
+
+
+.bg-light {
+    background: $clr-light;
+}
+
+.bg-extra-light {
+    background: $clr-extra-light;
+}
+
+
+.clr-primary,
+.clr-primary::before,
+.clr-primary::after {
+    color: $clr-primary;
+}
+
+.clr-primary-dark,
+.clr-primary-dark::before,
+.clr-primary-dark::after {
+    color: $clr-primary-dark;
+}
+
+.clr-success,
+.clr-success::before,
+.clr-success::after {
+    color: $clr-success;
+}
+
+
+
+.clr-success-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-success;
+    }
+}
+
+
+
+.clr-success-dark,
+.clr-success-dark::before,
+.clr-success-dark::after {
+    color: $clr-success-dark;
+}
+
+.clr-danger,
+.clr-danger::before,
+.clr-danger::after {
+    color: $clr-danger;
+}
+
+.clr-danger-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-danger;
+    }
+}
+
+
+
+.clr-danger-dark,
+.clr-danger-dark::before,
+.clr-danger-dark::after {
+    color: $clr-danger-dark;
+}
+
+.clr-info,
+.clr-info::before,
+.clr-info::after {
+    color: $clr-info;
+}
+
+.clr-info-dark,
+.clr-info-dark::before,
+.clr-info-dark::after {
+    color: $clr-info-dark;
+}
+
+.clr-warning,
+.clr-warning::before,
+.clr-warning::after {
+    color: $clr-warning;
+}
+
+
+.clr-warning-alt,
+.clr-warning-alt::before,
+.clr-warning-alt::after {
+    color: $clr-warning-alt;
+}
+
+
+.clr-warning-dark-alt,
+.clr-warning-dark-alt::before,
+.clr-warning-dark-alt::after {
+    color: $clr-warning-dark-alt;
+}
+
+
+.clr-warning-dark,
+.clr-warning-dark::before,
+.clr-warning-dark::after {
+    color: $clr-warning-dark;
+}
+
+.clr-dark,
+.clr-dark:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-dark;
+    }
+}
+
+.clr-secondary,
+.clr-secondary::before,
+.clr-secondary::after {
+    color: $clr-secondary;
+}
+
+.clr-default,
+.clr-default::before,
+.clr-default::after {
+    color: $clr-default;
+}
+
+.clr-light,
+.clr-light::before,
+.clr-light::after {
+    color: $clr-light;
+}
+
+.clr-extra-light,
+.clr-extra-light::before,
+.clr-extra-light::after {
+    color: $clr-extra-light;
+}
+
+// SET HOVER CLASSES
+.clr-dark-hover {
+
+    &:hover,
+    &:hover::before,
+    &:hover::after {
+        color: $clr-dark;
+    }
+}
+
+
+
+.clr-success-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-success;
+    }
+}
+
+.clr-success-dark-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-success-dark;
+    }
+}
+
+
+
+.clr-danger-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-danger;
+    }
+}
+
+.clr-danger-dark-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-danger-dark;
+    }
+}
+
+
+
+.clr-warning-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-warning;
+    }
+}
+
+.clr-warning-dark-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-warning-dark;
+    }
+}
+
+.clr-warning-alt-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-warning-alt
+    }
+}
+
+.clr-warning-dark-alt-hover:hover {
+
+    &,
+    &::before,
+    &::after {
+        color: $clr-warning-dark-alt
+    }
+}

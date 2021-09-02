@@ -1,0 +1,137 @@
+ $ddl-font-size: $font-size-md;
+
+ .form-control-ddl-holder {
+     @extend .control-size;
+
+     .has-content {
+         .placeholder {
+             color: $clr-success;
+         }
+     }
+
+     .placeholder {
+         padding-right: 0;
+         font-size: 15px;
+     }
+
+     .form-control-add-padding {
+         .placeholder {
+             padding-right: 25px;
+         }
+     }
+
+     &.form-control-sm {
+         @extend .control-size-sm;
+     }
+ }
+
+ .form-control-ddl,
+ .form-control-ddl-align-left {
+     position: relative;
+     border-bottom: 1px solid $clr-border;
+     height: 100%;
+
+     &.has-content {
+         // border-bottom: 1px solid $clr-success;
+     }
+
+     select {
+         width: 100%;
+         border: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         text-overflow: "";
+         font-size: $ddl-font-size;
+
+         &,
+         &:hover,
+         &:focus,
+         &:-webkit-autofill,
+         &:-webkit-autofill:hover,
+         &:-webkit-autofill:focus {
+             color: transparent !important;
+             -webkit-text-fill-color: transparent;
+             -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+             filter: none;
+         }
+
+         & option {
+             color: $font-clr;
+         }
+
+         option {}
+
+         &:focus {
+             outline: unset;
+         }
+     }
+
+     .text-and-caret {
+         position: absolute;
+         width: 100%;
+         height: $ddl-font-size;
+         top: -3px;
+         bottom: 0;
+         pointer-events: none;
+         color: $font-clr;
+         font-size: $ddl-font-size;
+         margin: auto;
+     }
+
+     .text-and-caret:before {
+         font-size: $ddl-font-size;
+         content: attr(data-placeholder);
+         padding-left: 0px;
+         color: $font-clr;
+     }
+
+     &.form-control-add-padding .text-and-caret:before {
+         padding-left: 20px;
+     }
+
+     .text-and-caret:after {
+         right: -5px;
+         position: absolute;
+         font-size: 30px;
+         content: "\e905";
+         font-family: "icomoon";
+         transition: color 150ms, transform 150ms;
+         line-height: $ddl-font-size + 3;
+     }
+
+     &:hover .text-and-caret {
+         color: $clr-success;
+     }
+
+     select:focus~.text-and-caret:after {
+         transform: rotate(90deg);
+     }
+
+     .icon {
+         padding-right: 15px;
+
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         right: 15px;
+
+         font-size: 30px;
+
+         &,
+         &::before,
+         &::after {
+             color: $clr-light;
+         }
+     }
+ }
+
+ .form-control-ddl-align-left {
+     .text-and-caret:after {
+         right: auto;
+         transition: color 150ms, transform 150ms;
+     }
+ }
+
+ select:disabled {
+     cursor: not-allowed;
+ }

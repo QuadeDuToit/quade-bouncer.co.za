@@ -1,0 +1,100 @@
+ .form-control-text-to-top-holder {
+     border-bottom: 1px solid $clr-border;
+     position: relative;
+     @extend .control-size;
+
+     .icon {
+         // color: 1px solid #B5B5B5;
+
+         font-size: 24px;
+
+         &,
+         &::before,
+         &::after {
+             transition: color 300ms;
+         }
+     }
+
+     .placeholder {
+         position: absolute;
+         left: 20px;
+         bottom: 0;
+         top: 0;
+         margin: auto 0;
+         height: 15px;
+         white-space: pre;
+         pointer-events: none;
+         width: calc(1% - 20px);
+         transition: width 300ms;
+         padding-right: 20px;
+         transition: top 300ms, font-size 300ms, left 300ms, color 300ms;
+
+     }
+
+     &.form-control-sm {
+
+         @extend .control-size-sm;
+
+         .form-control-text-to-top {
+             padding: 5px 20px 5px 0px;
+         }
+
+         &~.placeholder {
+             left: 0 !important;
+             top: -3px !important;
+         }
+
+         &~.icon {
+             font-size: 24px;
+             margin-top: 3px;
+         }
+     }
+
+     .form-control-text-to-top {
+         border: 0;
+         padding: 15px 20px 15px 0px;
+         font-size: $font-size-md;
+         color: $font-clr;
+
+         &:focus {
+             border: none;
+             outline: none;
+         }
+
+
+
+         &:focus~.placeholder,
+         &:hover~.placeholder,
+         &:not(:placeholder-shown)~.placeholder {
+             top: -38px;
+             font-size: 13px;
+             left: 0;
+             color: $clr-success;
+         }
+
+         &:focus+.placeholder,
+         &:hover+.placeholder {
+             color: $clr-success-dark;
+         }
+
+         &:not(:placeholder-shown)~.icon,
+         &:not(:placeholder-shown)~.icon::before,
+         &:not(:placeholder-shown)~.icon::after {
+             color: $clr-success !important;
+         }
+
+         &:hover~.icon,
+         &:hover~.icon::before,
+         &:hover~.icon::after,
+         &:focus~.icon,
+         &:focus~.icon::before,
+         &:focus~.icon::after {
+             color: $clr-success-dark !important;
+         }
+
+
+
+     }
+
+
+ }

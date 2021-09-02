@@ -1,0 +1,88 @@
+$url: "/assets/fonts";
+$robotoUrl: "/roboto";
+
+
+// break here
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url($url + $robotoUrl + '/Roboto 400.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url($url + $robotoUrl + '/Roboto Black 900.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    src: url($url + $robotoUrl + '/Roboto Black Italic 900.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url($url + $robotoUrl + '/Roboto Bold 700.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: url($url + $robotoUrl + '/Roboto Bold Italic 700.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url($url + $robotoUrl + '/Roboto Italic 400.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url($url + $robotoUrl + '/Roboto Light 300.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: url($url + $robotoUrl + '/Roboto Light Italic 300.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url($url + $robotoUrl + '/Roboto Medium 500.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: url($url + $robotoUrl + '/Roboto Medium Italic 500.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 250;
+    src: url($url + $robotoUrl + '/Roboto Thin 250.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 250;
+    src: url($url + $robotoUrl + '/Roboto Thin Italic 250.ttf') format('truetype');
+}

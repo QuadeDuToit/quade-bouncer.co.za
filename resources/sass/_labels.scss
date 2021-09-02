@@ -1,0 +1,32 @@
+.label {
+    @extend .font-size-xs;
+    color: $clr-default;
+    padding: 0 4px;
+    border-radius: 5px;
+
+    &.label-primary {
+        @extend .bg-primary;
+    }
+
+    &.label-success {
+        @extend .bg-success;
+    }
+
+    &.label-warning {
+        @extend .bg-warning;
+    }
+
+    &.label-danger {
+        @extend .bg-danger;
+    }
+
+    &.label-info {
+        @extend .bg-info;
+    }
+
+    &.label-default {
+        color: $clr-dark;
+        @extend .bg-default;
+    }
+
+}
